@@ -12,5 +12,6 @@ See: [Bootstrap 4](http://v4-alpha.getbootstrap.com/getting-started/download/)
 
 ### Use jQuery
 
+* The HTML5 boilerplate has a `vendor` directory. To be consistent, let's move all the dependencies like bootstrap on that directory.
 
 ### Directory structure
