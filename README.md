@@ -18,3 +18,4 @@ See: [Bootstrap 4](http://v4-alpha.getbootstrap.com/getting-started/download/)
 ### Load order is important
 
 * Make sure you load `normalize` before your css files, and `jquery` before all JS dependencies.
+* We primarily need `normalize` for cross-browser compatibility. Read through the CSS file if you have time.
