@@ -5,6 +5,7 @@
 See: [Bootstrap 4](http://v4-alpha.getbootstrap.com/getting-started/download/)
 
 * Because we are not using NPM, just download and copy what is on the `dist` directory.
+* Download [Tether](http://tether.io/) which Bootstrap requires. Copy what is on `dist` directory.
 
 ### HTML5 Boilerplate
 
@@ -20,3 +21,33 @@ See: [Bootstrap 4](http://v4-alpha.getbootstrap.com/getting-started/download/)
 
 * Make sure you load `normalize` before your css files, and `jquery` before all JS dependencies.
 * We primarily need `normalize` for cross-browser compatibility. Read through the CSS file if you have time.
+
+### Objects and Functions
+
+* You create a `quiz` object that contains most of the functions you need for the app. Read [You don't know JS objects](https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch3.md).
+
+### The Ternary Operator
+
+* Instead of a verbose conditional statement, the ternary operator is great:
+
+   ```javascript
+      condition ? 'correct' : 'wrong'
+   ```
+
+### Incrementing a number
+
+* Here's something you should try on your browser console:
+
+  ```javascript
+   var score = 0;
+   score ++ // returns 0
+   score ++ // returns 1
+  ```
+
+### DOM Manipulation
+
+* Never rely too much on the structure. You should always use manipulate elements with a class like `article.quiz-details` instead of just `article`.
+
+### Room for improvements
+
+* Some questions and answers have code. You can probably improve the code to display them properly.

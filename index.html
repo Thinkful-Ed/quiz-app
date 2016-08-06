@@ -20,12 +20,69 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <!-- Use Bootstrap classes -->
+        <section class="container">
+
+          <section class="jumbotron quiz">
+            <header class="quiz-intro">
+              <h1 class="display-3">Front-end development Quiz</h1>
+              <p class="lead">Would be great to know how well you know the basics of front-end development.</p>
+            </header>
+
+            <article class="quiz-details">
+            </article>
+
+            <footer>
+            </footer>
+          </section>
+        </section>
+
+        <div style="display:none;">
+          <div id="js-start-template">
+            <h1>Quiz App</h1>
+            <p>This app tests your ability to guess the right answer to four questions. The correct answers have been chosen at random.</p>
+            <p><em>Good luck friend!</em></p>
+            <form name="quiz-start">
+              <button class="btn btn-primary" type="submit">Start</button>
+            </form>
+          </div>
+
+          <div id="js-question-template">
+            <h3><span class="js-question-count"></span><span class="js-question-text"></span></h3>
+            <form name="current-question">
+              <ol class="js-choices"></ol>
+              <button class="btn btn-primary" type="submit">Submit</button>
+              <button class="js-restart-game btn btn-danger">Start over</button>
+            </form>
+          </div>
+
+          <div id="js-choice-template">
+            <li>
+              <input type="radio" name="user-answer" required>
+              <label></label>
+            </li>
+          </div>
+
+          <div id="js-answer-feedback-template">
+            <div class="js-feedback-container">
+              <div class="js-feedback-header"></div>
+              <p class="js-feedback-text"></p>
+              <button class="js-see-next btn btn-primary"></button>
+            </div>
+          </div>
+
+          <div id="js-final-feedback-template">
+            <h1>Results</h1>
+            <p class="js-results-text"></p>
+            <button class="js-restart-game btn btn-primary">Start over</button>
+          </div>
+        </div>
+
 
         <script src="js/vendor/jquery-1.12.0.min.js"></script>
+        <script src="js/vendor/tether.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-    </body>
+      </body>
 </html>
