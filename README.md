@@ -9,6 +9,7 @@ See: [Bootstrap 4](http://v4-alpha.getbootstrap.com/getting-started/download/)
 ### HTML5 Boilerplate
 
 * This project is a barebones HTML5 project with all dependencies needed for cross-browser compatibility. Simply download and copy all contents of unzipped file to the folder of your project. Choose `merge` and not `replace`.
+* Remove `google analytics code` on `index.html`
 
 ### Use jQuery
 
