@@ -49,7 +49,7 @@ $(document).ready(function() {
 
     answerFeedbackHeader: function(isCorrect) {
       return isCorrect ? "<h6 class='user-was-correct'>Correct!</h6>" :
-        "<h1 class='user-was-incorrect'>Wrooonnnngggg!</>";
+        "<h1 class='user-was-incorrect'>Wrong!</>";
     },
 
     answerFeedbackText: function(isCorrect) {
@@ -66,7 +66,6 @@ $(document).ready(function() {
 
       var choices = isCorrect ? praises : encouragements;
       return choices[Math.floor(Math.random() * choices.length)];
-
     },
 
     seeNextText: function() {
@@ -104,7 +103,6 @@ $(document).ready(function() {
   }
 
   function makeCurrentQuestionElem(quiz) {
-
     var questionElem = $("#js-question-template" ).children().clone();
     var question = quiz.currentQuestion();
 
@@ -138,7 +136,6 @@ $(document).ready(function() {
     finalFeedbackElem.find(".js-results-text").text(quiz.finalFeedbackText());
     return finalFeedbackElem;
   }
-
 
   function handleSeeNext(quiz, currentQuestionElem) {
     $("article.quiz-details").on("click", ".js-see-next", function(event) {

@@ -51,3 +51,4 @@ See: [Bootstrap 4](http://v4-alpha.getbootstrap.com/getting-started/download/)
 ### Room for improvements
 
 * Some questions and answers have code. You can probably improve the code to display them properly.
+* Improve the design using Bootstrap.
