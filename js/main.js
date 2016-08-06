@@ -127,10 +127,8 @@ $(document).ready(function() {
 
   function makeAnswerFeedbackElem(isCorrect, correctAnswer, quiz) {
     var feedbackElem = $("#js-answer-feedback-template").children().clone();
-    feedbackElem.find(".js-feedback-header").html(
-      quiz.answerFeedbackHeader(isCorrect));
-    feedbackElem.find(".js-feedback-text").text(
-      quiz.answerFeedbackText(isCorrect));
+    feedbackElem.find(".js-feedback-header").html(quiz.answerFeedbackHeader(isCorrect));
+    feedbackElem.find(".js-feedback-text").text(quiz.answerFeedbackText(isCorrect));
     feedbackElem.find(".js-see-next").text(quiz.seeNextText());
     return feedbackElem;
   }
