@@ -177,8 +177,12 @@ $(document).ready(function() {
     });
   }
 
+  // The .off() method removes event handlers that were attached with .on()
+  // In this case, the listeners are handleAnswers(), handleSeeNext() and even handleRestarts()
+  // handleStartQuiz will be called again to create the new quiz object and call functions with listeners
+  // See how we called this once on load.
   function handleRestarts() {
-    $("article.quiz-details").on("click", ".js-restart-game", function(event){
+    $("article.quiz-details").on("click", ".js-restart-quiz", function(event){
       event.preventDefault();
       $("article.quiz-details").off();
       handleStartQuiz();
