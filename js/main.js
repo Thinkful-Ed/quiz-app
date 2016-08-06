@@ -162,6 +162,10 @@ $(document).ready(function() {
     });
   }
 
+  // We can only use handleAnswers and handleRestarts when the quiz object has been created.
+  // The submit event listener will create the quiz object then call other listeners.
+  // On browser refresh, that object isn't saved and that's fine. If you want to remember states and objects, use localStorage
+  // But we don't need that now.
   function handleStartQuiz() {
     $("article.quiz-details").html($("#js-start-template").clone());
     $("form[name='quiz-start']").submit(function(event) {
