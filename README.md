@@ -52,3 +52,5 @@ See: [Bootstrap 4](http://v4-alpha.getbootstrap.com/getting-started/download/)
 
 * Some questions and answers have code. You can probably improve the code to display them properly.
 * Improve the design using Bootstrap.
+* Improve the templates.
+* Update JavaScript if you change references on your HTML.

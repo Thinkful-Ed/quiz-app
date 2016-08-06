@@ -53,7 +53,6 @@ $(document).ready(function() {
     },
 
     answerFeedbackText: function(isCorrect) {
-
       var praises = [
         "Wow. You got it right. I bet you feel really good about yourself now",
         "Correct. Which would be impressive, if it wasn't just luck"
@@ -71,7 +70,6 @@ $(document).ready(function() {
     seeNextText: function() {
       return this.currentQuestionIndex <
       this.questions.length - 1 ? "Next" : "How did I do?";
-
     },
 
     questionCountText: function() {
