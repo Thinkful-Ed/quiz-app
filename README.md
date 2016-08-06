@@ -10,6 +10,7 @@ See: [Bootstrap 4](http://v4-alpha.getbootstrap.com/getting-started/download/)
 
 * This project is a barebones HTML5 project with all dependencies needed for cross-browser compatibility. Simply download and copy all contents of unzipped file to the folder of your project. Choose `merge` and not `replace`.
 * Remove `google analytics code` on `index.html`
+* Do not delete the comments on the `index.html` file because IE will display that. Read about **conditional statements** [here](https://msdn.microsoft.com/en-us/library/ms537512(v=vs.85).aspx). You're practically saying you do not support their browser.
 
 ### Use jQuery
 
