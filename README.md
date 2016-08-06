@@ -15,4 +15,6 @@ See: [Bootstrap 4](http://v4-alpha.getbootstrap.com/getting-started/download/)
 
 * The HTML5 boilerplate has a `vendor` directory. To be consistent, let's move all the dependencies like bootstrap on that directory.
 
-### Directory structure
+### Load order is important
+
+* Make sure you load `normalize` before your css files, and `jquery` before all JS dependencies.
